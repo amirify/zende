@@ -3,7 +3,12 @@
   "name": "zende",
   "version": "1.0.0",
   "description": "A lively collection of animated React components designed to enhance user experience with dynamic interactions and vibrant visuals.",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint 'src/**/*.{ts,tsx}'",
@@ -39,6 +44,7 @@
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^12.1.0",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/eslint__js": "^8.42.3",
