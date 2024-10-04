@@ -1,9 +1,19 @@
+import {ButtonStyles} from "./Button.styles";
+
 interface ButtonProps {
-    color: string
+    children: string;
+    onClick?: () => void;
+    disabled?: boolean;
 }
 
-export default function Button() {
+export const Button: React.FC<ButtonProps> = ({ children, onClick, disabled }) => {
     return (
-        <div>Button</div>
-    )
-}
+        <button
+            css={ButtonStyles}
+            onClick={onClick}
+            disabled={disabled}
+        >
+            {children}
+        </button>
+    );
+};

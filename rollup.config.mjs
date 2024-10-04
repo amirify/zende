@@ -24,10 +24,13 @@ export default {
         babel({
             babelHelpers: 'bundled',
             exclude: 'node_modules/**',
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@emotion'],
+            presets: ['@babel/preset-env',
+                ["@babel/preset-react", { "runtime": "automatic", "importSource": "@emotion/react" }],
+                "@babel/preset-typescript"
+            ],
+            plugins: ["@emotion/babel-plugin"],
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
         }),
     ],
-    external: ['react', 'react-dom'],
+    external: [/node_modules/, 'react', 'react-dom']
 };
