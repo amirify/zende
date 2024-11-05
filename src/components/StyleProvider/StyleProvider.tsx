@@ -2,12 +2,13 @@ import { ReactNode } from 'react';
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { mergeDeep } from '../../utils/themeUtils';
 import { lightTheme, darkTheme } from '../../theme/themes';
+import { Theme } from '../../theme/theme.types';
 
 interface StyleProviderProps {
     children: ReactNode;
-    defaultTheme?: Record<string, any>; // Optional default theme provided by user
-    customTheme?: Record<string, any>;  // Optional custom theme
-    mode?: 'light' | 'dark';            // Prop to switch between light and dark themes
+    defaultTheme?: Theme;
+    customTheme?: Theme;
+    mode?: 'light' | 'dark';
 }
 
 export const StyleProvider: React.FC<StyleProviderProps> = ({
