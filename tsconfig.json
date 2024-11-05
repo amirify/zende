@@ -8,10 +8,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strict": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
     "jsxImportSource": "@emotion/react"
   },
-  "include": [
-    "src",
-    ".storybook"
-  ]
+  "include": ["src/**/*", "types/**/*.d.ts"]
 }
