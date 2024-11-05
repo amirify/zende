@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "description": "A lively collection of animated React components designed to enhance user experience with dynamic interactions and vibrant visuals.",
   "scripts": {
-    "format": "npx prettier . --write",
+    "format": "npx prettier . --write --ignore-unknown",
     "check": "npx prettier . --check",
+    "debug": "npx prettier . --debug-check",
     "test": "jest",
+    "test:update-snapshot": "jest -u",
     "lint": "npx eslint",
     "prepare": "husky",
     "build": "rollup --config",

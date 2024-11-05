@@ -1,10 +1,10 @@
-import { Theme } from './theme.types';
-import { lightColors } from './colors/lightColors';
-import { darkColors } from './colors/darkColors';
-import { radii } from './radii';
-import { shadows } from './shadows';
-import { spacing } from './spacing';
-import { typography } from './typography';
+import { Theme } from "./theme.types";
+import { lightColors } from "./colors/lightColors";
+import { darkColors } from "./colors/darkColors";
+import { radii } from "./radii";
+import { shadows } from "./shadows";
+import { spacing } from "./spacing";
+import { typography } from "./typography";
 
 const lightTheme: Theme = {
   colors: lightColors,

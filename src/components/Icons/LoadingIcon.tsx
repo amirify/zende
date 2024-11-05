@@ -1,20 +1,19 @@
 interface LoadingIconProps {
   size?: string;
   fill?: string;
-  margin?: 'left' | 'right' | 'both';
+  margin?: "left" | "right" | "both";
   className?: string;
 }
 
-export const LoadingIcon: React.FC<LoadingIconProps> = ({ 
-  size = '24px',
-  fill = 'currentColor',
+export const LoadingIcon: React.FC<LoadingIconProps> = ({
+  size = "24px",
+  fill = "currentColor",
   margin,
-  className 
+  className,
 }) => {
-
   const marginStyle = {
-    marginLeft: margin === 'left' || margin === 'both' ? '0.5rem' : undefined,
-    marginRight: margin === 'right' || margin === 'both' ? '0.5rem' : undefined
+    marginLeft: margin === "left" || margin === "both" ? "0.5rem" : undefined,
+    marginRight: margin === "right" || margin === "both" ? "0.5rem" : undefined,
   };
 
   return (
@@ -48,4 +47,4 @@ export const LoadingIcon: React.FC<LoadingIconProps> = ({
       </g>
     </svg>
   );
-}
+};
