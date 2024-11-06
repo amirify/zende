@@ -1,0 +1,9 @@
+{
+  "*.{js,jsx,ts,tsx}": [
+    "prettier --debug-check",
+    "prettier --write",
+    "eslint --fix",
+    "jest --bail --findRelatedTests"
+  ],
+  "!(*.{js,jsx,ts,tsx})": "prettier --write --ignore-unknown"
+}
